@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <style>
+        h2 {
+            text-align: center;
+            padding: 8px;
+            margin:0;
+        }
+        #board-border {
+            background-color: darkred;
+            border: 2px solid #000000;
+            width: 450px;
+            height:280px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #board-display {
+            background-color: #c9c9c9;
+            border: 5px solid #f3e248;
+            width: 90%;
+            height: 90%;
+        }
+        .pixel {
+            background-color: #c9c9c9;
+            width: 4px;
+            height: 4px;
+        }
+        .row {
+            display: flex;
+        }
+        button {
+            ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Etch A Sketch</h2>
+    <main>
+        <div id="board-border">
+
+                <div id="board-display">
+
+                </div>
+
+        </div>
+        <div style="display: flex; justify-content: center;padding:8px;">
+            <button onclick="restart()">Restart</button>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
